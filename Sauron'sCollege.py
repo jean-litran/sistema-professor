@@ -53,14 +53,21 @@ while True:
         break
     else:
         print("Opção inválida. Tente novamente.\n")
-def salvar_medias():
-    with open("medias.txt", "w") as arquivo:
+def salvar_medias(media_a, media_b, turma_a, turma_b, nome_arquivo):
+    with open(f"{nome_arquivo}.txt", "w") as arquivo:
         arquivo.write(f"Média da turma A: {media_a}\n")
         arquivo.write(f"Média da turma B: {media_b}\n\n")
+        arquivo.write("Turma A:\n")
         for i, nota in enumerate(turma_a):
-            arquivo.write(f"Média do aluno {i+1} da turma A: {nota}\n")
+            nome = input(f"Digite o nome do aluno {i+1} da turma A: ")
+            arquivo.write(f"{nome}: {nota}\n")
+        arquivo.write("\nTurma B:\n")
         for i, nota in enumerate(turma_b):
-            arquivo.write(f"Média do aluno {i+1} da turma B: {nota}\n")
+            nome = input(f"Digite o nome do aluno {i+1} da turma B: ")
+            arquivo.write(f"{nome}: {nota}\n") 
+# salvar as médias da turma A e B no arquivo "medias.txt"
+salvar_medias(media_a, media_b, turma_a, turma_b, "medias")
 
-salvar_medias()
+print("Arquivo medias.txt salvo com sucesso!")
+
 #feito por saruman sem chat gpt
