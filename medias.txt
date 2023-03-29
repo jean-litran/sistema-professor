@@ -1,0 +1,5 @@
+Média da turma A: 9.5
+Média da turma B: 7.5
+
+Média do aluno 1 da turma A: 9.5
+Média do aluno 1 da turma B: 7.5
