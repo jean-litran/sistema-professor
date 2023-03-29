@@ -1,3 +1,10 @@
+ _____ _       _           _       _           _
+|_   _| |_ ___| |__   ___ | |_ ___| |_ ___  __| |
+  | | | __/ __| '_ \ / _ \| __/ _ \ __/ _ \/ _` |
+  | | | || (__| | | | (_) | ||  __/ ||  __/ (_| |
+  |_|  \__\___|_| |_|\___/ \__\___|\__\___|\__,_|
+
+                   Bem-vindo ao Necromancer College
 # Sauron´s College 
 
 Este é um programa em Python que permite inserir as notas de alunos de duas turmas e calcular a média de cada turma e de cada aluno.
